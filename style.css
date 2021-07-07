@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-size: 35px; */
+}
+
+body{
+    background-color: #7289DA;
+}
+
+.input-container{
+/* text-align: center; */
+/* height property they had */
+padding: 2rem;
+height: 20vh;
+/* margin-top: 2rem; */
+}
+
+.todo-input{
+    display: block;
+    /* margin-left: 12.5rem; */
+    margin:auto;
+    text-align: center;
+    /* font size used rems instead of px */
+    font-size: 2rem;
+    border: 3px solid lightcoral;
+    border-radius: 50px;
+    /* width: 75rem; */
+    /* % makes it scalable */
+    width: 60%;
+    outline: none;
+    /* height: 6vh; */
+    /* 70% of parents height */
+    height: 70%;    
+}
+
+.add-todo{
+    display: block;
+    /* padding: 15px; */
+    /* using percentages adding height */ 
+    width: 18%;
+    height: 50%;
+    /* we want a constant gap between todo input and todo button */
+    /* margin-top:20px; */
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    /* if margin is auto no need of below statement */
+    /* text-align: center; */
+    border: 2px solid lightcoral;
+    border-radius: 50px;
+    outline: none;
+}
+
+/* adding new */
+.todos-container{
+    height: 80vh;
+    margin-top: 5px;
+}
+
+.todos-list{
+    /* using auto on each item is better than making the whole list center aligned also this made the delete button come in the center when our todo was big , always prefer using text align on individual text */
+    /* text-align: center; */
+}
+
+
+.todo{
+    /* if we use inline we cant add width height and padding to the element */
+    display: inline;
+    /* margin-right: 30em; */
+    margin-left: 60px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.todo-item{
+    /* making it a block element */
+    display: block;
+    margin: auto;
+    /* specific bottom must be used after we set auto */
+    margin-bottom: 20px;
+    background-color: lightsalmon;
+    /* forgot to add height and width */
+    height: 4rem;
+    width: 70%;
+    /* removing font size */
+    /* font-size: 35px; */
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.delete-task{   
+    /* why display block???? */
+    display: block;
+    border-color: lightcoral;
+    font-size: 0.9rem;
+    /* position: fixed; */
+    float: right;
+    border-radius: 10px;
+    padding: 9px;
+    margin-top: 3px;
+    margin-right: 40px;
+}
